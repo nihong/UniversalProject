@@ -8,4 +8,8 @@ pod 'Masonry'
 #pod 'NIMSDK', '~> 3.7.0'
 pod 'YTKNetwork'
 pod 'SDWebImage', '~>3.8'
+#查找内存泄漏
+pod 'MLeaksFinder'
+#debug工具
+pod 'FLEX', :configurations => ['Debug']
 end

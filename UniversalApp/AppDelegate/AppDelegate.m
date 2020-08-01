@@ -7,6 +7,33 @@
 //
 
 #import "AppDelegate.h"
+#if DEBUG
+#import "FLEXManager.h"
+#endif
+
+@implementation RGWindow
+
+- (instancetype)initWithFrame:(CGRect)frame
+{
+    self = [super initWithFrame:frame];
+    if (@available(iOS 13.0, *)) {
+        self.overrideUserInterfaceStyle = UIUserInterfaceStyleLight;
+    }
+    return self;
+}
+
+#if DEBUG
+- (void)motionBegan:(UIEventSubtype)motion withEvent:(UIEvent *)event
+{
+    [super motionBegan:motion withEvent:event];
+    
+    if (motion == UIEventSubtypeMotionShake) {
+        [[FLEXManager sharedManager] showExplorer];
+    }
+}
+#endif
+
+@end
 
 @interface AppDelegate ()
 

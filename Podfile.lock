@@ -14,9 +14,13 @@ PODS:
   - AFNetworking/Serialization (3.2.1)
   - AFNetworking/UIKit (3.2.1):
     - AFNetworking/NSURLSession
+  - FBRetainCycleDetector (0.1.4)
+  - FLEX (3.0.0)
   - Masonry (1.1.0)
   - MBProgressHUD (1.0.0)
   - MJRefresh (3.4.3)
+  - MLeaksFinder (1.0.0):
+    - FBRetainCycleDetector
   - SDWebImage (3.8.3):
     - SDWebImage/Core (= 3.8.3)
   - SDWebImage/Core (3.8.3)
@@ -28,9 +32,11 @@ PODS:
 
 DEPENDENCIES:
   - AFNetworking (~> 3.0)
+  - FLEX
   - Masonry
   - MBProgressHUD (~> 1.0.0)
   - MJRefresh
+  - MLeaksFinder
   - SDWebImage (~> 3.8)
   - YTKNetwork
   - YYKit
@@ -38,22 +44,28 @@ DEPENDENCIES:
 SPEC REPOS:
   trunk:
     - AFNetworking
+    - FBRetainCycleDetector
+    - FLEX
     - Masonry
     - MBProgressHUD
     - MJRefresh
+    - MLeaksFinder
     - SDWebImage
     - YTKNetwork
     - YYKit
 
 SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
+  FBRetainCycleDetector: 46f8179bbb1c587deee3ea838a1a3ee02acf5015
+  FLEX: d66c759bce0f6ebbbf472c742380874d846f2883
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
   MJRefresh: 53e3e3219f204425ee6d3e62e8733d3295944cd6
+  MLeaksFinder: 8c435bd2f6d070af18cff082b503b21adc130fc0
   SDWebImage: a72e880a8fe0f7fc31efe15aaed443c074d2a80c
   YTKNetwork: 19be749c30f0512ada07180f4637b4b67bc8ddc2
   YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
 
-PODFILE CHECKSUM: 566c6543bae285ebf85670567800b1b61b73e67a
+PODFILE CHECKSUM: 7496053b795c55c212dc05fb476df5c59ec4f5d8
 
 COCOAPODS: 1.9.0
