@@ -186,6 +186,8 @@
 		29FEE77B1ECED1E200C81B60 /* MBHUD_Warn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29FEE7731ECED1E200C81B60 /* MBHUD_Warn@2x.png */; };
 		29FEE77C1ECED1E200C81B60 /* MBHUD_Warn@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29FEE7741ECED1E200C81B60 /* MBHUD_Warn@3x.png */; };
 		5BC8C50C0BEF57AA0780D5DC /* libPods-UniversalApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E884624664B432D4FE5044F /* libPods-UniversalApp.a */; };
+		A1599C2D24D59E2D006A06FA /* Color.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1599C2C24D59E2D006A06FA /* Color.xcassets */; };
+		A1599C3124D59EC9006A06FA /* UIColor+AppTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = A1599C3024D59EC9006A06FA /* UIColor+AppTheme.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -480,6 +482,9 @@
 		29FEE7731ECED1E200C81B60 /* MBHUD_Warn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MBHUD_Warn@2x.png"; sourceTree = "<group>"; };
 		29FEE7741ECED1E200C81B60 /* MBHUD_Warn@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MBHUD_Warn@3x.png"; sourceTree = "<group>"; };
 		9E884624664B432D4FE5044F /* libPods-UniversalApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-UniversalApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1599C2C24D59E2D006A06FA /* Color.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Color.xcassets; sourceTree = "<group>"; };
+		A1599C2F24D59EC9006A06FA /* UIColor+AppTheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+AppTheme.h"; sourceTree = "<group>"; };
+		A1599C3024D59EC9006A06FA /* UIColor+AppTheme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+AppTheme.m"; sourceTree = "<group>"; };
 		A51AB222BA7ACF202B5B1330 /* Pods-UniversalApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UniversalApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UniversalApp/Pods-UniversalApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -749,6 +754,7 @@
 		293D45AD1ECD6926007C64A9 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				A1599C2E24D59EA7006A06FA /* Color */,
 				296DEA5F1F5D50D100C6FD00 /* SDCycleScrollView */,
 				29D3C0041F4D11A200FD3914 /* TagsView */,
 				290A980A1F4ABD00006BF882 /* SandBoxHelper */,
@@ -1309,6 +1315,7 @@
 		296F9EBB1ECC64CE0063A255 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				A1599C2C24D59E2D006A06FA /* Color.xcassets */,
 				293D459B1ECD6422007C64A9 /* Assets.xcassets */,
 				293D459C1ECD6422007C64A9 /* Base.lproj */,
 				293D459F1ECD6422007C64A9 /* Info.plist */,
@@ -1519,6 +1526,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		A1599C2E24D59EA7006A06FA /* Color */ = {
+			isa = PBXGroup;
+			children = (
+				A1599C2F24D59EC9006A06FA /* UIColor+AppTheme.h */,
+				A1599C3024D59EC9006A06FA /* UIColor+AppTheme.m */,
+			);
+			path = Color;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1688,6 +1704,7 @@
 				293D46511ECDBB63007C64A9 /* icon_tabbar_misc_selected@2x.png in Resources */,
 				293D46461ECDBB63007C64A9 /* icon_tabbar_merchant_normal.png in Resources */,
 				290A97E01F4AB24A006BF882 /* stepPk_win_colour2@2x.png in Resources */,
+				A1599C2D24D59E2D006A06FA /* Color.xcassets in Resources */,
 				296F9A2D1F04F39000909CDB /* 10.jpg in Resources */,
 				290A97F41F4ABC02006BF882 /* my_back_img@2x.png in Resources */,
 				290A97E31F4AB24A006BF882 /* stepPk_win_colour5@2x.png in Resources */,
@@ -1822,6 +1839,7 @@
 				296DEA731F5D50D100C6FD00 /* SDCollectionViewCell.m in Sources */,
 				29CF33301F14B60800DB7507 /* MineLogic.m in Sources */,
 				296DEA741F5D50D100C6FD00 /* SDCycleScrollView.m in Sources */,
+				A1599C3124D59EC9006A06FA /* UIColor+AppTheme.m in Sources */,
 				2917D2141EE02CF100E76185 /* UIButton+XYButton.m in Sources */,
 				29CF332D1F14B5EA00DB7507 /* MsgLogic.m in Sources */,
 				2914E48A1F20A462001C01DB /* PersonModel.m in Sources */,
