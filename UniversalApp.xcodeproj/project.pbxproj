@@ -188,6 +188,9 @@
 		5BC8C50C0BEF57AA0780D5DC /* libPods-UniversalApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E884624664B432D4FE5044F /* libPods-UniversalApp.a */; };
 		A1599C2D24D59E2D006A06FA /* Color.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1599C2C24D59E2D006A06FA /* Color.xcassets */; };
 		A1599C3124D59EC9006A06FA /* UIColor+AppTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = A1599C3024D59EC9006A06FA /* UIColor+AppTheme.m */; };
+		A15B130324D9678400CEA636 /* RGPublicWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A15B130224D9678400CEA636 /* RGPublicWebViewController.m */; };
+		A15B130624D978BB00CEA636 /* RGPublicDataListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A15B130524D978BB00CEA636 /* RGPublicDataListVC.m */; };
+		A15B130924D9793C00CEA636 /* RGWebModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A15B130824D9793C00CEA636 /* RGWebModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -418,7 +421,7 @@
 		296F9A3D1F050AA900909CDB /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		296F9A521F0516A700909CDB /* UICollectionView+IndexPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UICollectionView+IndexPath.h"; sourceTree = "<group>"; };
 		296F9A531F0516A700909CDB /* UICollectionView+IndexPath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UICollectionView+IndexPath.m"; sourceTree = "<group>"; };
-		296F9EB81ECC64CE0063A255 /* App框架.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "App框架.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		296F9EB81ECC64CE0063A255 /* 百川流.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "百川流.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		296F9ED11ECC64CE0063A255 /* UniversalAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UniversalAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		296F9ED51ECC64CE0063A255 /* MiAiAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MiAiAppTests.m; sourceTree = "<group>"; };
 		296F9ED71ECC64CE0063A255 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -485,6 +488,12 @@
 		A1599C2C24D59E2D006A06FA /* Color.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Color.xcassets; sourceTree = "<group>"; };
 		A1599C2F24D59EC9006A06FA /* UIColor+AppTheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+AppTheme.h"; sourceTree = "<group>"; };
 		A1599C3024D59EC9006A06FA /* UIColor+AppTheme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+AppTheme.m"; sourceTree = "<group>"; };
+		A15B130124D9678400CEA636 /* RGPublicWebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RGPublicWebViewController.h; sourceTree = "<group>"; };
+		A15B130224D9678400CEA636 /* RGPublicWebViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RGPublicWebViewController.m; sourceTree = "<group>"; };
+		A15B130424D978BB00CEA636 /* RGPublicDataListVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RGPublicDataListVC.h; sourceTree = "<group>"; };
+		A15B130524D978BB00CEA636 /* RGPublicDataListVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RGPublicDataListVC.m; sourceTree = "<group>"; };
+		A15B130724D9793C00CEA636 /* RGWebModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RGWebModel.h; sourceTree = "<group>"; };
+		A15B130824D9793C00CEA636 /* RGWebModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RGWebModel.m; sourceTree = "<group>"; };
 		A51AB222BA7ACF202B5B1330 /* Pods-UniversalApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UniversalApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UniversalApp/Pods-UniversalApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -717,6 +726,7 @@
 		293D45A91ECD6926007C64A9 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				A15B130024D966A700CEA636 /* PublicData */,
 				293D45CC1ECD79FA007C64A9 /* Home(首页) */,
 				293D45D31ECD7A4A007C64A9 /* MakeFriends(交友) */,
 				293D45DA1ECD7B46007C64A9 /* Message(消息页) */,
@@ -1289,7 +1299,7 @@
 		296F9EB91ECC64CE0063A255 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				296F9EB81ECC64CE0063A255 /* App框架.app */,
+				296F9EB81ECC64CE0063A255 /* 百川流.app */,
 				296F9ED11ECC64CE0063A255 /* UniversalAppTests.xctest */,
 				296F9EDC1ECC64CE0063A255 /* UniversalAppUITests.xctest */,
 			);
@@ -1535,6 +1545,19 @@
 			path = Color;
 			sourceTree = "<group>";
 		};
+		A15B130024D966A700CEA636 /* PublicData */ = {
+			isa = PBXGroup;
+			children = (
+				A15B130124D9678400CEA636 /* RGPublicWebViewController.h */,
+				A15B130224D9678400CEA636 /* RGPublicWebViewController.m */,
+				A15B130424D978BB00CEA636 /* RGPublicDataListVC.h */,
+				A15B130524D978BB00CEA636 /* RGPublicDataListVC.m */,
+				A15B130724D9793C00CEA636 /* RGWebModel.h */,
+				A15B130824D9793C00CEA636 /* RGWebModel.m */,
+			);
+			path = PublicData;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1554,7 +1577,7 @@
 			);
 			name = UniversalApp;
 			productName = MiAiApp;
-			productReference = 296F9EB81ECC64CE0063A255 /* App框架.app */;
+			productReference = 296F9EB81ECC64CE0063A255 /* 百川流.app */;
 			productType = "com.apple.product-type.application";
 		};
 		296F9ED01ECC64CE0063A255 /* UniversalAppTests */ = {
@@ -1808,6 +1831,7 @@
 				293D45A41ECD6422007C64A9 /* main.m in Sources */,
 				29AD6C631ED3E4D600B0879C /* AppDelegate.m in Sources */,
 				290471B81F98D9A80081CCA1 /* UITabBar+CustomBadge.m in Sources */,
+				A15B130324D9678400CEA636 /* RGPublicWebViewController.m in Sources */,
 				29CF332A1F14B5CC00DB7507 /* MakeFriendsLogic.m in Sources */,
 				2917D1FF1EDFC89A00E76185 /* YYFPSLabel.m in Sources */,
 				29AD6C621ED3E4D600B0879C /* AppDelegate+AppService.m in Sources */,
@@ -1859,6 +1883,7 @@
 				2914E48D1F20A471001C01DB /* PersonListLogic.m in Sources */,
 				293ECC2D1EE56D1D008061A1 /* IMManager.m in Sources */,
 				29AD6C4D1ED3D51200B0879C /* OpenUDID.m in Sources */,
+				A15B130924D9793C00CEA636 /* RGWebModel.m in Sources */,
 				290A97FE1F4ABC12006BF882 /* MineHeaderView.m in Sources */,
 				296DEA721F5D50D100C6FD00 /* TAPageControl.m in Sources */,
 				29530FA61F60F0E800D24E05 /* DraggingCardViewController.m in Sources */,
@@ -1868,6 +1893,7 @@
 				290A97FD1F4ABC12006BF882 /* MineTableViewCell.m in Sources */,
 				296DEA781F5D530E00C6FD00 /* ScrollBannerVC.m in Sources */,
 				2940C5381F0A3EC5008BC29F /* GetWaterFallListAPI.m in Sources */,
+				A15B130624D978BB00CEA636 /* RGPublicDataListVC.m in Sources */,
 				29CD2C6B1F30227100A0F5DC /* TableViewCell.m in Sources */,
 				29D3C00A1F4D11A200FD3914 /* TagsButton.m in Sources */,
 				293D46111ECDAEED007C64A9 /* MineViewController.m in Sources */,
@@ -2043,7 +2069,7 @@
 					"$(PROJECT_DIR)/UniversalApp/ThridParty/UMSocial/UMSocialSDKPlugin",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.nb.universalproject;
-				PRODUCT_NAME = "App框架";
+				PRODUCT_NAME = "百川流";
 				TARGETED_DEVICE_FAMILY = 1;
 				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/UniversalApp/Define";
 			};
@@ -2072,7 +2098,7 @@
 					"$(PROJECT_DIR)/UniversalApp/ThridParty/UMSocial/UMSocialSDKPlugin",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.nb.universalproject;
-				PRODUCT_NAME = "App框架";
+				PRODUCT_NAME = "百川流";
 				TARGETED_DEVICE_FAMILY = 1;
 				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/UniversalApp/Define";
 			};

@@ -323,7 +323,7 @@
     NSURL * file = [NSURL fileURLWithPath:fileUrl];
     
     NativeCallJSVC *webVC = [[NativeCallJSVC alloc] initWithUrl:file.absoluteString];
-    webVC.isHidenNaviBar = YES;
+    webVC.isHidenNaviBar = NO;
     RootNavigationController *loginNavi =[[RootNavigationController alloc] initWithRootViewController:webVC];
     
     [self presentViewController:loginNavi animated:YES completion:nil];

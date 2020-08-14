@@ -14,81 +14,93 @@ NS_ASSUME_NONNULL_BEGIN
 /**
    背景--- 1～2级
 */
-+ (UIColor *)mainBackgroundColor;
++ (UIColor *)rg_mainBackgroundColor;
 
-+ (UIColor *)secondBackgroundColor;
++ (UIColor *)rg_secondBackgroundColor;
 
-+ (UIColor *)thirdBackgroundColor;
++ (UIColor *)rg_thirdBackgroundColor;
 
 /**
     文字--- 1～4级
  */
-+ (UIColor *)darkTitleColor;
++ (UIColor *)rg_darkTitleColor;
 
-+ (UIColor *)mainTextColor;
++ (UIColor *)rg_mainTextColor;
 
-+ (UIColor *)subTextColor;
++ (UIColor *)rg_subTextColor;
 
-+ (UIColor *)thirdTextColor;
++ (UIColor *)rg_thirdTextColor;
 
 
 /**
    导航条背景--- 1～2级
 */
-+ (UIColor *)mainNavigationBarBackgroundColor;
++ (UIColor *)rg_mainNavigationBarBackgroundColor;
 
-+ (UIColor *)secondNavigationBarBackgroundColor;
++ (UIColor *)rg_secondNavigationBarBackgroundColor;
 
 
 /**
    导航条Tint--- 1～2级
 */
-+ (UIColor *)mainNavigationBarTintColor;
++ (UIColor *)rg_mainNavigationBarTintColor;
 
-+ (UIColor *)secondNavigationBarTintColor;
++ (UIColor *)rg_secondNavigationBarTintColor;
 
 
 /**
    分割条--- 粗/细
 */
-+ (UIColor *)sectionHeaderColor;
++ (UIColor *)rg_sectionHeaderColor;
 
-+ (UIColor *)separatorLineColor;
++ (UIColor *)rg_separatorLineColor;
 
 
 
 /**
     Button--- 背景/Tint + Enable/Unable
  */
-+ (UIColor *)buttonEnableBackgroundColor;
++ (UIColor *)rg_buttonEnableBackgroundColor;
 
-+ (UIColor *)buttonUnableBackgroundColor;
++ (UIColor *)rg_buttonUnableBackgroundColor;
 
-+ (UIColor *)buttonEnableTintColor;
++ (UIColor *)rg_buttonEnableTintColor;
 
-+ (UIColor *)buttonUnableTintColor;
++ (UIColor *)rg_buttonUnableTintColor;
 
 
 /**
     Tabbar  选中色
  */
-+ (UIColor *)tabbarSelectedColor;
++ (UIColor *)rg_tabbarSelectedColor;
 
 /**
     链接色
  */
-+ (UIColor *)customerLinkColor;
++ (UIColor *)rg_customerLinkColor;
 
 /**
     蒙板色值
  */
-+ (UIColor *)customerMaskColor;
++ (UIColor *)rg_customerMaskColor;
 
-///特别色值
+
+#pragma mark 特别色值
+
 /**
     徽章色值
  */
-+ (UIColor *)badgeColor;
++ (UIColor *)rg_badgeColor;
+
+/**
+    进度条色值
+ */
++ (UIColor *)rg_progessColor;
+
+/**
+   主题色值
+*/
++ (UIColor *)rg_mainThemeColor;
 
 @end
 

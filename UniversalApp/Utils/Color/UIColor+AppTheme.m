@@ -14,7 +14,7 @@
 
 @implementation UIColor (AppTheme)
 
-+ (UIColor *)mainBackgroundColor
++ (UIColor *)rg_mainBackgroundColor
 {
     if (@available(iOS 11.0, *)) {
         return [UIColor colorNamed:@"mainBackgroundColor"];
@@ -23,7 +23,7 @@
     }
 }
 
-+ (UIColor *)secondBackgroundColor
++ (UIColor *)rg_secondBackgroundColor
 {
     if (@available(iOS 11.0, *)) {
         return [UIColor colorNamed:@"secondBackgroundColor"];
@@ -32,7 +32,7 @@
     }
 }
 
-+ (UIColor *)thirdBackgroundColor
++ (UIColor *)rg_thirdBackgroundColor
 {
     if (@available(iOS 11.0, *)) {
         return [UIColor colorNamed:@"sectionHeaderColor"];
@@ -41,7 +41,7 @@
     }
 }
 
-+ (UIColor *)mainNavigationBarBackgroundColor
++ (UIColor *)rg_mainNavigationBarBackgroundColor
 {
     if (@available(iOS 11.0, *)) {
         return [UIColor colorNamed:@"mainNavigationBarBackgroundColor"];
@@ -50,7 +50,7 @@
     }
 }
 
-+ (UIColor *)secondNavigationBarBackgroundColor
++ (UIColor *)rg_secondNavigationBarBackgroundColor
 {
     if (@available(iOS 11.0, *)) {
         return [UIColor colorNamed:@"secondNavigationBarBackgroundColor"];
@@ -59,7 +59,7 @@
     }
 }
 
-+ (UIColor *)mainNavigationBarTintColor
++ (UIColor *)rg_mainNavigationBarTintColor
 {
     if (@available(iOS 11.0, *)) {
         return [UIColor colorNamed:@"mainNavigationBarTintColor"];
@@ -68,7 +68,7 @@
     }
 }
 
-+ (UIColor *)secondNavigationBarTintColor
++ (UIColor *)rg_secondNavigationBarTintColor
 {
     if (@available(iOS 11.0, *)) {
         return [UIColor colorNamed:@"secondNavigationBarTintColor"];
@@ -77,7 +77,7 @@
     }
 }
 
-+ (UIColor *)sectionHeaderColor
++ (UIColor *)rg_sectionHeaderColor
 {
     if (@available(iOS 11.0, *)) {
         return [UIColor colorNamed:@"sectionHeaderColor"];
@@ -86,7 +86,7 @@
     }
 }
 
-+ (UIColor *)separatorLineColor
++ (UIColor *)rg_separatorLineColor
 {
     if (@available(iOS 11.0, *)) {
         return [UIColor colorNamed:@"separatorLineColor"];
@@ -95,7 +95,7 @@
     }
 }
 
-+ (UIColor *)darkTitleColor
++ (UIColor *)rg_darkTitleColor
 {
     if (@available(iOS 11.0, *)) {
         return [UIColor colorNamed:@"darkTitleColor"];
@@ -104,7 +104,7 @@
     }
 }
 
-+ (UIColor *)mainTextColor
++ (UIColor *)rg_mainTextColor
 {
     if (@available(iOS 11.0, *)) {
         return [UIColor colorNamed:@"mainTextColor"];
@@ -113,7 +113,7 @@
     }
 }
 
-+ (UIColor *)subTextColor
++ (UIColor *)rg_subTextColor
 {
     if (@available(iOS 11.0, *)) {
         return [UIColor colorNamed:@"subTextColor"];
@@ -122,7 +122,7 @@
     }
 }
 
-+ (UIColor *)thirdTextColor
++ (UIColor *)rg_thirdTextColor
 {
     if (@available(iOS 11.0, *)) {
         return [UIColor colorNamed:@"thirdTextColor"];
@@ -131,7 +131,7 @@
     }
 }
 
-+ (UIColor *)tabbarSelectedColor
++ (UIColor *)rg_tabbarSelectedColor
 {
     if (@available(iOS 11.0, *)) {
         return [UIColor colorNamed:@"tabbarSelectedColor"];
@@ -140,7 +140,7 @@
     }
 }
 
-+ (UIColor *)buttonEnableBackgroundColor
++ (UIColor *)rg_buttonEnableBackgroundColor
 {
     if (@available(iOS 11.0, *)) {
         return [UIColor colorNamed:@"buttonEnableBackgroundColor"];
@@ -149,7 +149,7 @@
     }
 }
 
-+ (UIColor *)buttonUnableBackgroundColor;
++ (UIColor *)rg_buttonUnableBackgroundColor;
 {
     if (@available(iOS 11.0, *)) {
         return [UIColor colorNamed:@"buttonUnableBackgroundColor"];
@@ -158,17 +158,17 @@
     }
 }
 
-+ (UIColor *)buttonEnableTintColor
++ (UIColor *)rg_buttonEnableTintColor
 {
     return [UIColor whiteColor];
 }
 
-+ (UIColor *)buttonUnableTintColor
++ (UIColor *)rg_buttonUnableTintColor
 {
     return [UIColor whiteColor];
 }
 
-+ (UIColor *)customerLinkColor
++ (UIColor *)rg_customerLinkColor
 {
     if (@available(iOS 11.0, *)) {
         return [UIColor colorNamed:@"customerLinkColor"];
@@ -177,7 +177,7 @@
     }
 }
 
-+ (UIColor *)customerMaskColor
++ (UIColor *)rg_customerMaskColor
 {
     if (@available(iOS 11.0, *)) {
         return [UIColor colorNamed:@"customerMaskColor"];
@@ -186,8 +186,18 @@
     }
 }
 
-+ (UIColor *)badgeColor
++ (UIColor *)rg_badgeColor
 {
     return [UIColor redColor];
+}
+
++ (UIColor *)rg_progessColor
+{
+    return UIColorHex(0x0485d1);
+}
+
++ (UIColor *)rg_mainThemeColor
+{
+    return UIColorHex(0x00AE68);
 }
 @end

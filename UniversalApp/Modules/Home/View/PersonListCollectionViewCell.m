@@ -24,23 +24,23 @@
 
 -(instancetype)initWithFrame:(CGRect)frame{
     if ([super initWithFrame:frame]) {
-        self.backgroundColor=KWhiteColor;
+        self.backgroundColor=UIColor.rg_mainBackgroundColor;
         ViewRadius(self, 5);
         NSLog(@"-------");
         _imgView=[[UIImageView alloc]initWithFrame:CGRectMake(0, 0, frame.size.width, frame.size.height-20)];
         _imgView.contentMode=UIViewContentModeScaleAspectFill;
         _imgView.clipsToBounds=YES;
-        _imgView.backgroundColor=KWhiteColor;
+        _imgView.backgroundColor=UIColor.rg_mainBackgroundColor;
         //        _imgView.autoresizingMask=UIViewAutoresizingFlexibleTopMargin|UIViewAutoresizingFlexibleBottomMargin;
         [self addSubview:_imgView];
         _lblHobby=[[UILabel alloc]initWithFrame:CGRectMake(10, _imgView.bottom, frame.size.width-20, 20)];
         _lblHobby.numberOfLines=0;
-        _lblHobby.textColor=CFontColor1;
+        _lblHobby.textColor= UIColor.rg_mainTextColor;
         _lblHobby.font=FFont1;
         [self addSubview:_lblHobby];
         
         _line1=[[UIView alloc]initWithFrame:CGRectMake(0, _lblHobby.bottom+10, frame.size.width, 0.5)];
-        _line1.backgroundColor=CLineColor;
+        _line1.backgroundColor=UIColor.rg_separatorLineColor;
         [self addSubview:_line1];
         
         _imgHead=[[UIImageView alloc]initWithFrame:CGRectMake(10, _line1.bottom+10, 30, 30)];
@@ -48,7 +48,7 @@
         
         _imgHead.contentMode=UIViewContentModeScaleAspectFill;
         _imgHead.clipsToBounds=YES;
-        _imgHead.backgroundColor=CViewBgColor;
+        _imgHead.backgroundColor=UIColor.rg_mainBackgroundColor;
         [self addSubview:_imgHead];
         
         _lblNickName=[[UILabel alloc]initWithFrame:CGRectMake(_imgHead.right+5, _imgHead.top+5, self.width-_imgHead.right-20, 15)];
@@ -57,22 +57,22 @@
         [self addSubview:_lblNickName];
         
         _lblAge=[[UILabel alloc]initWithFrame:CGRectMake(_lblNickName.left, 0, _lblNickName.width, 15)];
-        _lblAge.textColor=CFontColor1;
+        _lblAge.textColor=UIColor.rg_mainTextColor;
         _lblAge.font=FFont1;
         [self addSubview:_lblAge];
         
         _line2=[[UIView alloc]initWithFrame:CGRectMake(0, _imgHead.bottom+10, frame.size.width, 0.5)];
-        _line2.backgroundColor=CLineColor;
+        _line2.backgroundColor=UIColor.rg_separatorLineColor;
         [self addSubview:_line2];
         
         _lblFrom=[[UILabel alloc]initWithFrame:CGRectMake(10, 0, frame.size.width-80, 15)];
-        _lblFrom.textColor=CFontColor2;
+        _lblFrom.textColor=UIColor.rg_subTextColor;
         _lblFrom.font=FFont1;
         [self addSubview:_lblFrom];
         
         _juli=[[UILabel alloc]initWithFrame:CGRectMake(self.width - 80, 0, 70, 15)];
         _juli.textAlignment = NSTextAlignmentRight;
-        _juli.textColor=CFontColor2;
+        _juli.textColor=UIColor.rg_subTextColor;
         _juli.font=FFont1;
         [self addSubview:_juli];
     }
@@ -81,7 +81,7 @@
 -(void)setPersonModel:(PersonModel *)personModel{
     _personModel=personModel;
 //    _imgView.backgroundColor=[UIColor colorWithHexString:personModel.imageAve];
-    _imgView.backgroundColor=KWhiteColor;
+    _imgView.backgroundColor=UIColor.rg_mainBackgroundColor;
     [_imgView sd_setImageWithURL:[NSURL URLWithString:personModel.picture] placeholderImage:[UIImage imageWithColor:KGrayColor]];
     _lblHobby.text=personModel.hobbys;
     [_imgHead sd_setImageWithURL:[NSURL URLWithString:personModel.headImg] placeholderImage:[UIImage imageWithColor:KGrayColor]];

@@ -59,7 +59,7 @@
 
     self.collectionView.frame = CGRectMake(0, 0, KScreenWidth, KScreenHeight - kTopHeight - kTabBarHeight);
     [self.collectionView setCollectionViewLayout:layout];
-    self.collectionView.backgroundColor = CViewBgColor;
+    self.collectionView.backgroundColor = UIColor.rg_mainBackgroundColor;
     [self.collectionView registerClass:[PersonListCollectionViewCell class] forCellWithReuseIdentifier:NSStringFromClass([PersonListCollectionViewCell class])];
     self.collectionView.delegate = self;
     self.collectionView.dataSource = self;

@@ -23,7 +23,7 @@
     self = [super init];
     if (self) {
         self.url = url;
-        _progressViewColor = [UIColor colorWithHexString:@"0485d1"];
+        _progressViewColor = [UIColor rg_progessColor];
     }
     return self;
 }
@@ -61,12 +61,7 @@
     _webConfiguration = configuration;
     _jsHandler = [[XLJSHandler alloc]initWithViewController:self configuration:configuration];
     
-    CGRect f = self.view.bounds;
-    if (self.navigationController && self.isHidenNaviBar == NO) {
-        f = CGRectMake(0, 0, self.view.bounds.size.width, kScreenHeight - kTopHeight);
-    }
-    
-    self.webView = [[WKWebView alloc]initWithFrame:f configuration:configuration];
+    _webView = [[WKWebView alloc]initWithFrame:CGRectZero configuration:configuration];
     _webView.navigationDelegate = self;
     _webView.backgroundColor = [UIColor clearColor];
     _webView.allowsBackForwardNavigationGestures =YES;//打开网页间的 滑动返回
@@ -74,6 +69,17 @@
     //监控进度
     [_webView addObserver:self forKeyPath:@"estimatedProgress" options:NSKeyValueObservingOptionNew context:nil];
     [self.view addSubview:_webView];
+    [_webView mas_makeConstraints:^(MASConstraintMaker *make) {
+        if (@available(iOS 11.0, *)) {
+            make.top.equalTo(self.view.mas_top);
+            make.left.equalTo(self.view.mas_safeAreaLayoutGuideLeft);
+            make.bottom.equalTo(self.view.mas_safeAreaLayoutGuideBottom);
+            make.right.equalTo(self.view.mas_safeAreaLayoutGuideRight);
+        } else {
+            make.edges.mas_equalTo(UIEdgeInsetsZero);
+        }
+    }];
+    
     //进度条
     _progressView = [[UIProgressView alloc]initWithProgressViewStyle:UIProgressViewStyleDefault];
     _progressView.tintColor = _progressViewColor;

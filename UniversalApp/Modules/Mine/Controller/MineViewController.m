@@ -25,6 +25,10 @@
 @end
 
 @implementation MineViewController
+- (void)dealloc
+{
+    NSLog(@"");
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];

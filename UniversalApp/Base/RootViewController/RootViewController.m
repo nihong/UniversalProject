@@ -30,12 +30,13 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor =KWhiteColor;
+    self.view.backgroundColor = UIColor.rg_mainBackgroundColor;
     //是否显示返回按钮
     self.isShowLiftBack = YES;
     //默认导航栏样式：黑字
     self.StatusBarStyle = UIStatusBarStyleLightContent;
     self.automaticallyAdjustsScrollViewInsets = NO;
+
 }
 -(void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
@@ -103,9 +104,21 @@
 //        _tableView.contentInset = UIEdgeInsetsMake(0, 0, 30, 0);
 //        _tableView.mj_footer.ignoredScrollViewContentInsetBottom = 30;
 
-        _tableView.backgroundColor=CViewBgColor;
+        _tableView.backgroundColor=UIColor.rg_mainBackgroundColor;
         _tableView.scrollsToTop = YES;
         _tableView.tableFooterView = [[UIView alloc] init];
+        
+        [self.view addSubview:_tableView];
+        [_tableView mas_makeConstraints:^(MASConstraintMaker *make) {
+            if (@available(iOS 11.0, *)) {
+                make.top.equalTo(self.view.mas_top);
+                make.left.equalTo(self.view.mas_safeAreaLayoutGuideLeft);
+                make.bottom.equalTo(self.view.mas_safeAreaLayoutGuideBottom);
+                make.right.equalTo(self.view.mas_safeAreaLayoutGuideRight);
+            } else {
+                make.edges.mas_equalTo(UIEdgeInsetsZero);
+            }
+        }];
     }
     return _tableView;
 }
@@ -139,8 +152,20 @@
 //        _collectionView.scrollIndicatorInsets = _collectionView.contentInset;
 //#endif
         
-        _collectionView.backgroundColor=CViewBgColor;
+        _collectionView.backgroundColor=UIColor.rg_mainBackgroundColor;
         _collectionView.scrollsToTop = YES;
+        
+        [self.view addSubview:_collectionView];
+        [_collectionView mas_makeConstraints:^(MASConstraintMaker *make) {
+            if (@available(iOS 11.0, *)) {
+                make.top.equalTo(self.view.mas_top);
+                make.left.equalTo(self.view.mas_safeAreaLayoutGuideLeft);
+                make.bottom.equalTo(self.view.mas_safeAreaLayoutGuideBottom);
+                make.right.equalTo(self.view.mas_safeAreaLayoutGuideRight);
+            } else {
+                make.edges.mas_equalTo(UIEdgeInsetsZero);
+            }
+        }];
     }
     return _collectionView;
 }
@@ -295,19 +320,11 @@
     // 默认进去类型
     return   UIInterfaceOrientationPortrait;
 }
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

@@ -113,7 +113,7 @@
         return nil;
     }
     UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, 10)];
-    [view setBackgroundColor:CViewBgColor];
+    [view setBackgroundColor:UIColor.rg_mainBackgroundColor];
     return view;
 }
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
